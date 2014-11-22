@@ -1,0 +1,20 @@
+{
+  "name": "2014-10-databases",
+  "version": "0.0.0",
+  "homepage": "https://github.com/floofydoug/2014-10-databases",
+  "authors": [
+    "Hack Reactor Students <accounts@hackreactor.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "underscore": "~1.7.0"
+  }
+}
