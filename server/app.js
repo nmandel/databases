@@ -11,6 +11,26 @@ var parser = require('body-parser');
 // Router
 var router = require('./routes.js');
 
+// Sequelize copied stuff: ****
+
+var Sequelize = require('sequelize');
+var sequelize = new Sequelize('chat', 'root', 'poop', {
+      dialect: "mysql", // or 'sqlite', 'postgres', 'mariadb'
+      port:    3306, // or 5432 (for postgres)
+    })
+sequelize.authenticate().complete(function(err) {
+    if (!!err) {
+      console.log('Unable to connect to the database, you base fool:', err)
+    } else {
+      console.log('Connection has been established successfully you magnificent creature.')
+    }
+  });
+
+
+console.log("WTF");
+
+// ****
+
 var app = express();
 module.exports.app = app;
 

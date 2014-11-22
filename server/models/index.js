@@ -1,18 +1,9 @@
 var db = require('../db');
+// var doug = require('doug');
 
 
-
-
-module.exports = {
-  messages: {
-    get: function () {}, // a function which produces all the messages
-    post: function () {} // a function which can be used to insert a message into the database
-  },
-
-  users: {
-    // Ditto as above.
-    get: function () {},
-    post: function () {}
-  }
-};
-
+var User = sequelize.define('User', {
+  username: Sequelize.STRING,
+  message: Sequelize.STRING,
+  createdAt: roomName
+})
